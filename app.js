@@ -31,13 +31,11 @@ app.get('/v1/city', (req, res, next) => {
 		  method: 'GET'	  }, function (error, response, body){
 		  if (!error){
 			  var resp = JSON.parse(body);
-			  res.status(200).json({
-									"meta": {
+			  res.status(200).json({						
 											"latitude": slatitude,
 											"longitude": slongitude,
 											"city": resp.geonames[0].name,
-											"pays": resp.geonames[0].countryCode
-											}		
+											"pays": resp.geonames[0].countryCode												
 									}); // fin déclaration de la réponse 200
 		  }//fin if
 		  else {
