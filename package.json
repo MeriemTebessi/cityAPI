@@ -1,0 +1,13 @@
+{
+  "name": "cityAPI",
+  "version": "1.0.0",
+  "description": "API to manage cities",
+  "main": "server.js",
+  "scripts": {},
+  "author": "Meriem Tebessi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "request": "^2.88.2"
+  }
+}
