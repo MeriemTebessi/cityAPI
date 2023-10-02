@@ -35,7 +35,7 @@ app.get('/v1/city', (req, res, next) => {
 											"latitude": slatitude,
 											"longitude": slongitude,
 											"city": resp.geonames[0].name,
-											"pays": resp.geonames[0].countryName												
+											"country": resp.geonames[0].countryName												
 									}); // fin déclaration de la réponse 200
 		  }//fin if
 		  else {
